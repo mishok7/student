@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script>
+
+        // Запрос у пользователя числа и сохранение его в переменную
+        let anyNumber = prompt("Введите любое число: ");
+
+        //Создание калькулятора и выполнение арифмитического действия
+        var firstNumber = prompt("Первое число для калькулятора");
+        var secondNumber = prompt("второе число для калькулятора");
+        var arifAction = prompt("введите арифметическое действие");
+        var result = eval(firstNumber + arifAction + secondNumber);
+        alert(result);
+
+        //Просим пользователя задумать число, затем выводим задуманное им число
+        let guessNumber = prompt("Задумайте число, затем умножьте его на 2 и прибавьте 7. Введите результат: ");
+        let originalNumber = (guessNumber - 7) / 2;
+        alert("Вы задумали число: " + originalNumber);
+
+        //Получаем от пользователя данные о нем, сохраняем в переменные, вычисляем возраст и выводим
+        let userName = prompt("Введите ваше имя: ");
+        let birthYear = (prompt("Введите ваш год рождения: "));
+        let fullYear = new Date().getFullYear();
+        let age = fullYear - birthYear;
+        document.write(userName + ": " + age);
+
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 6</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
