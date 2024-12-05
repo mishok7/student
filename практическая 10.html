@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class User {
+            constructor(username) {
+                this.username = username;
+                this.display();
+            }
+
+            display() {
+                document.write(`Имя пользователя: ${this.username}`);
+            }
+        }
+        let user = new User(prompt("Введите ваше имя"));
+
+        //Задание 2 переписанный код из примера в виде класса
+        class Message {
+            constructor(userName = 'Вася') {
+                this.userName = userName;
+                this.show();
+            }
+
+            show() {
+                let message = `Привет, ${this.userName}`;
+                alert(message);
+            }
+        }
+        let message = new Message();
+
+        //Задание 3 класс для переворачивания имени
+        class NameReverser {
+            constructor(name) {
+                this.name = name;
+                this.reverse();
+            }
+
+            reverse() {
+                let reversed = this.name.split('').reverse().join('');
+                alert(`Перевернутое имя: ${reversed}`);
+            }
+        }
+        let reverser = new NameReverser(prompt("Введите имя для переворота"));
+    </script>
+</body>
+
+</html>
