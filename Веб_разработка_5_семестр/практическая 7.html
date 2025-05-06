@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var answerOnQuestion = 0;
+
+        // Первая загадка
+        alert("Чему равно 1 + 1?");
+        var responseRight = 2; // Правильный ответ
+        var response = prompt("Ответ на загадку 1");
+
+        // Проверка ответа на первую загадку
+        if (responseRight == response) {
+            alert("Верно"); //Если ответ верный
+            var answerOnQuestion = answerOnQuestion + 1; // Увеличиваем счетчик отгаданных загадок
+        } else {
+            alert("Неверно"); // Если ответ неверный
+        };
+
+        //Вторая загадка
+        alert("Сколько дней в году?");
+        var response = prompt("Ответ на загадку 2");
+        var responseRight = 365; // Правильный ответ
+        // Проверка ответа на вторую загадку
+        if (responseRight == response) {
+            alert("Верно"); // Если ответ верный
+            var answerOnQuestion = answerOnQuestion + 1; // Увеличиваем счетчик отгаданных загадок
+        } else {
+            alert("Неверно"); // Если ответ неверный
+        };
+
+        // Показываем количество отгаданных загадок
+        alert("Количество отгаданных загадок = " + answerOnQuestion);
+
+        // Цикл от 1 до 10
+        for (i = 1; i < 11; i++) {
+            alert(i); // Выводим числа от 1 до 10
+        }
+
+        // Объявление переменной для цикла while
+        var z = 0;
+
+        while (text != 1) {
+            var text = prompt("Еще по одной");
+        };
+
+        // Запрос фамилии у пользователя
+        let surname = prompt("Введите вашу фамилию:");
+        let visitorSurname = surname.split('').reverse().join('');
+
+        // Проверка, является ли фамилия палиндромом
+        if (surname.toLowerCase() === visitorSurname.toLowerCase()) {
+            alert("Ваша фамилия - палиндром!"); // Если палиндром
+        } else {
+            alert("Ваша фамилия - не палиндром."); // Если не палиндром
+        }
+
+        // Запрос номера по журналу
+        var visitorNumber = prompt("Введите свой номер по журналу:");
+        // Вычисление факториала
+        var factorial = 1;
+        for (let i = visitorNumber; i > 0; i--) {
+            factorial = factorial * i; // Умножаем текущий факториал на число
+        };
+        // Показываем результат вычисления факториала
+        alert("Факториал моего номера в списке:" + factorial);
+
+    </script>
+</body>
+
+</html>
